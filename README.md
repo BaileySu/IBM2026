@@ -2,7 +2,7 @@
 
 QuantBridge lets an investment researcher ask about fund risk, clarify the measure, and revise the analysis while keeping the original result. A portfolio risk view and a separate research export use the same holdings, price history and metric definitions, served from one SQLite snapshot.
 
-- [Three-minute demo (MP4)](QuantBridge_Demo.mp4)
+- [Watch the QuantBridge pitch and demo (MP4, 3 min 8 sec)](QuantBridge_Demo.mp4)
 - [Problem and solution statement](QuantBridge_Problem_and_Solution.txt)
 - [IBM Bob technology statement](QuantBridge_IBM_Bob_Technology_Statement.txt)
 
