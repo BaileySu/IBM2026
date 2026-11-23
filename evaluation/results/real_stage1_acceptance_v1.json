@@ -1,0 +1,707 @@
+{
+  "status": "PASS",
+  "checks_passed": 65,
+  "checks": [
+    {
+      "name": "real_source_declaration",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "source_file_hashes",
+      "status": "PASS",
+      "detail": 13
+    },
+    {
+      "name": "database_hash",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "source_manifest_hash",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "builder_contract_hashes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "sqlite_integrity",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "foreign_keys",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "no_synthetic_or_invented_publication_time",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "read_only_connection_blocks_write",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "fund_dates_agree",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "IVV_all_source_rows_preserved",
+      "status": "PASS",
+      "detail": 508
+    },
+    {
+      "name": "IVV_fields_and_precision_match_source",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "IVV_valuation_independent_source_total",
+      "status": "PASS",
+      "detail": "886847198076.99"
+    },
+    {
+      "name": "IVV_selected_ten_present",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "IVV_sector_values_reconcile",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "IVV_top5_independent_source_order",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "OEF_all_source_rows_preserved",
+      "status": "PASS",
+      "detail": 105
+    },
+    {
+      "name": "OEF_fields_and_precision_match_source",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "OEF_valuation_independent_source_total",
+      "status": "PASS",
+      "detail": "20636637766.67"
+    },
+    {
+      "name": "OEF_selected_ten_present",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "OEF_sector_values_reconcile",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "OEF_top5_independent_source_order",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "no_unexplained_valuation_residuals",
+      "status": "PASS",
+      "detail": [
+        {
+          "fund": "IVV",
+          "ticker": "CPRT",
+          "difference_usd": "55923.2500",
+          "within_display_price_rounding": true
+        },
+        {
+          "fund": "IVV",
+          "ticker": "NWS",
+          "difference_usd": "-7909.7500",
+          "within_display_price_rounding": true
+        }
+      ]
+    },
+    {
+      "name": "130_reference_sessions_end_on_snapshot",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "NVDA_complete_aligned_history",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "NVDA_history_matches_original_response",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "NVDA_20_and_60_day_independent_calculations",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "AAPL_complete_aligned_history",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "AAPL_history_matches_original_response",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "AAPL_20_and_60_day_independent_calculations",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "MSFT_complete_aligned_history",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "MSFT_history_matches_original_response",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "MSFT_20_and_60_day_independent_calculations",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "AMZN_complete_aligned_history",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "AMZN_history_matches_original_response",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "AMZN_20_and_60_day_independent_calculations",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "GOOGL_complete_aligned_history",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "GOOGL_history_matches_original_response",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "GOOGL_20_and_60_day_independent_calculations",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "AVGO_complete_aligned_history",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "AVGO_history_matches_original_response",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "AVGO_20_and_60_day_independent_calculations",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "GOOG_complete_aligned_history",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "GOOG_history_matches_original_response",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "GOOG_20_and_60_day_independent_calculations",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "META_complete_aligned_history",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "META_history_matches_original_response",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "META_20_and_60_day_independent_calculations",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "TSLA_complete_aligned_history",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "TSLA_history_matches_original_response",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "TSLA_20_and_60_day_independent_calculations",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "MU_complete_aligned_history",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "MU_history_matches_original_response",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "MU_20_and_60_day_independent_calculations",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "SPY_complete_aligned_history",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "SPY_history_matches_original_response",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "selected_snapshot_price_crosscheck",
+      "status": "PASS",
+      "detail": "20 comparisons, absolute difference <= USD 0.02"
+    },
+    {
+      "name": "missing_interior_price_blocks_no_fill",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "window_20_rejects_only_20_prices",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "window_20_accepts_21_prices",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "window_60_rejects_only_60_prices",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "window_60_accepts_61_prices",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "unknown_symbol_blocks",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "unsupported_window_blocks",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "offline_rebuild_identical_database",
+      "status": "PASS",
+      "detail": null
+    }
+  ],
+  "database_sha256": "78c3f4a4126ff164de4e126d60e4c78bf77fb6a3ba1ca8e6a3ba4684f29b85fa",
+  "as_of_date": "2026-10-21",
+  "history_start": "2026-04-17",
+  "history_end": "2026-10-21",
+  "portfolio_results": {
+    "IVV": {
+      "snapshot_rows": 508,
+      "equity_rows": 504,
+      "excluded_non_equity_rows": 4,
+      "equity_market_value_usd": "886847198076.99",
+      "top5_symbols": [
+        "NVDA",
+        "AAPL",
+        "MSFT",
+        "AMZN",
+        "GOOGL"
+      ],
+      "top5_equity_weight": "0.2827702124563960355918969360263794337380",
+      "sector_equity_weights": {
+        "Information Technology": "0.3826614628812965973567511626388469775471",
+        "Consumer Discretionary": "0.09012292940492713341708574693858204910650",
+        "Communication": "0.09400638349596775580571371719045347980398",
+        "Health Care": "0.09694817411378454856997780987023810658540",
+        "Financials": "0.1179666959163440285024170231923074908158",
+        "Energy": "0.03717253445631125123339296694439246057690",
+        "Consumer Staples": "0.04744742226707359226460340480384331536688",
+        "Industrials": "0.08005257819020222241840620992299386607300",
+        "Materials": "0.01674119146376453417988334052727173595107",
+        "Real Estate": "0.01713284794362167228364019418245096766928",
+        "Utilities": "0.01974777986670666396812842378861955050403"
+      },
+      "selected_history_universe_equity_weight": "0.3851560733172625234085747862088569481050"
+    },
+    "OEF": {
+      "snapshot_rows": 105,
+      "equity_rows": 101,
+      "excluded_non_equity_rows": 4,
+      "equity_market_value_usd": "20636637766.67",
+      "top5_symbols": [
+        "NVDA",
+        "AAPL",
+        "MSFT",
+        "AMZN",
+        "GOOGL"
+      ],
+      "top5_equity_weight": "0.3827216930141650316778889488395264981014",
+      "sector_equity_weights": {
+        "Information Technology": "0.4522627272013233036255598627524445976146",
+        "Consumer Discretionary": "0.09241123948010884853888494965013319039010",
+        "Communication": "0.1220349638911346957153805068087996530102",
+        "Health Care": "0.09258060054073883178890823308069647898650",
+        "Financials": "0.1047504780750347536865190481935812177840",
+        "Energy": "0.02746161310857021316275877094255876485439",
+        "Consumer Staples": "0.04834674566325901368276294145388784401004",
+        "Industrials": "0.04647750130639474219691624172534628372001",
+        "Materials": "0.004675343284157906365007919029606360647410",
+        "Utilities": "0.007321701096776156896815299504401532524920",
+        "Real Estate": "0.001677086352501534340486226858544076457807"
+      },
+      "selected_history_universe_equity_weight": "0.5212983308179626705549242042517034304740"
+    }
+  },
+  "security_results": [
+    {
+      "symbol": "NVDA",
+      "window": 20,
+      "window_return": "-0.0156977223731230737612415358165093589040",
+      "sample_variance": "0.0002482048616533657843830451785632868279377",
+      "annualized_security_volatility": "0.2500952321349772906632392655993531752257"
+    },
+    {
+      "symbol": "NVDA",
+      "window": 60,
+      "window_return": "0.127954837845247979991340498305938457988",
+      "sample_variance": "0.0005083503002601914657566157461394847042347",
+      "annualized_security_volatility": "0.3579165764051285867332084617376080037091"
+    },
+    {
+      "symbol": "AAPL",
+      "window": 20,
+      "window_return": "0.020681269503039321953931334008138152881",
+      "sample_variance": "0.0001114415290076113708948178748241571898437",
+      "annualized_security_volatility": "0.1675806233128343077219279712542591786908"
+    },
+    {
+      "symbol": "AAPL",
+      "window": 60,
+      "window_return": "0.012369704776427236666188258130086047074",
+      "sample_variance": "0.0002392377532107887495767223693760992689027",
+      "annualized_security_volatility": "0.2455359725358359071847401603018142368566"
+    },
+    {
+      "symbol": "MSFT",
+      "window": 20,
+      "window_return": "0.064643752583697425014548087060412086490",
+      "sample_variance": "0.0001874682882771514487245920064294325854786",
+      "annualized_security_volatility": "0.2173522685546257763709818611257891962401"
+    },
+    {
+      "symbol": "MSFT",
+      "window": 60,
+      "window_return": "0.357450878246016957352907569750473258063",
+      "sample_variance": "0.0006122274019790887065095302663388919194373",
+      "annualized_security_volatility": "0.3927865900189699119311096765787328768522"
+    },
+    {
+      "symbol": "AMZN",
+      "window": 20,
+      "window_return": "0.052553418462687577144030485934500720807",
+      "sample_variance": "0.0003051345709515563530579316378156378504154",
+      "annualized_security_volatility": "0.2772975150984808247576620004773418281257"
+    },
+    {
+      "symbol": "AMZN",
+      "window": 60,
+      "window_return": "0.136489623250148512195527962183923084369",
+      "sample_variance": "0.0007185929972104418602910929940772742780436",
+      "annualized_security_volatility": "0.4255413438163574592174419270086241173917"
+    },
+    {
+      "symbol": "GOOGL",
+      "window": 20,
+      "window_return": "-0.0090873425351893614076470375262544736979",
+      "sample_variance": "0.0001364663037303367622095638150734349085135",
+      "annualized_security_volatility": "0.1854440846725634009022055218686964679818"
+    },
+    {
+      "symbol": "GOOGL",
+      "window": 60,
+      "window_return": "0.003791275335755020006507398669609483297",
+      "sample_variance": "0.00032827477697988359653130010639037262774",
+      "annualized_security_volatility": "0.2876199641869991373250414381007018627133"
+    },
+    {
+      "symbol": "AVGO",
+      "window": 20,
+      "window_return": "-0.0484239074742837021565446318840141151647",
+      "sample_variance": "0.0005109392813907789962896314421697485499037",
+      "annualized_security_volatility": "0.3588268369429414724374858392478242177869"
+    },
+    {
+      "symbol": "AVGO",
+      "window": 60,
+      "window_return": "-0.1115615317218788195366359279080168090915",
+      "sample_variance": "0.0005811219642080073061120909227152388567034",
+      "annualized_security_volatility": "0.3826783701496830629829455649404534453357"
+    },
+    {
+      "symbol": "GOOG",
+      "window": 20,
+      "window_return": "-0.0120305649505197809577569432740760079345",
+      "sample_variance": "0.0001325753201184867196612807713697144570525",
+      "annualized_security_volatility": "0.1827812371931502529368912580878938167677"
+    },
+    {
+      "symbol": "GOOG",
+      "window": 60,
+      "window_return": "-0.0043148983350970833762564538469490980452",
+      "sample_variance": "0.0003058255533250740776317075385046718047692",
+      "annualized_security_volatility": "0.2776113099964024656689551975564580723091"
+    },
+    {
+      "symbol": "META",
+      "window": 20,
+      "window_return": "-0.0625990560179878592449357879949806969442",
+      "sample_variance": "0.0006425524641284492540325352713391094093611",
+      "annualized_security_volatility": "0.4023968451173160130050669774387154141042"
+    },
+    {
+      "symbol": "META",
+      "window": 60,
+      "window_return": "0.176371382026651810924446733743966141425",
+      "sample_variance": "0.0008571038989466123363080312750479694696225",
+      "annualized_security_volatility": "0.4647474395137065289839386112156307610243"
+    },
+    {
+      "symbol": "TSLA",
+      "window": 20,
+      "window_return": "0.016705267244776091020291636680568655239",
+      "sample_variance": "0.0004900827955766484989324638478637340826784",
+      "annualized_security_volatility": "0.3514268977829036661898459342003057851854"
+    },
+    {
+      "symbol": "TSLA",
+      "window": 60,
+      "window_return": "0.257058281784130738478929430979788556782",
+      "sample_variance": "0.0006208475743676621812117979688171466479159",
+      "annualized_security_volatility": "0.3955421453406082612882618367811451650927"
+    },
+    {
+      "symbol": "MU",
+      "window": 20,
+      "window_return": "-0.1474663188244287500630733624930647776816",
+      "sample_variance": "0.0007795951872245735960090414059125861618979",
+      "annualized_security_volatility": "0.4432358144155236765475121427331346244646"
+    },
+    {
+      "symbol": "MU",
+      "window": 60,
+      "window_return": "0.113687147866275436013819011034661306420",
+      "sample_variance": "0.001804215399326068431702689217572223851458",
+      "annualized_security_volatility": "0.6742864974401973332081303644025446492602"
+    }
+  ],
+  "valuation_rounding_residuals": [
+    {
+      "fund": "IVV",
+      "ticker": "CPRT",
+      "difference_usd": "55923.2500",
+      "within_display_price_rounding": true
+    },
+    {
+      "fund": "IVV",
+      "ticker": "NWS",
+      "difference_usd": "-7909.7500",
+      "within_display_price_rounding": true
+    }
+  ],
+  "cross_source_price_comparison": [
+    {
+      "fund": "IVV",
+      "symbol": "NVDA",
+      "holdings_price": "221.97",
+      "history_close": "221.97000122070312",
+      "difference_usd": "0.00000122070312"
+    },
+    {
+      "fund": "OEF",
+      "symbol": "NVDA",
+      "holdings_price": "221.97",
+      "history_close": "221.97000122070312",
+      "difference_usd": "0.00000122070312"
+    },
+    {
+      "fund": "IVV",
+      "symbol": "AAPL",
+      "holdings_price": "343.99",
+      "history_close": "343.989990234375",
+      "difference_usd": "-0.000009765625"
+    },
+    {
+      "fund": "OEF",
+      "symbol": "AAPL",
+      "holdings_price": "343.99",
+      "history_close": "343.989990234375",
+      "difference_usd": "-0.000009765625"
+    },
+    {
+      "fund": "IVV",
+      "symbol": "MSFT",
+      "holdings_price": "532.95",
+      "history_close": "532.9500122070312",
+      "difference_usd": "0.0000122070312"
+    },
+    {
+      "fund": "OEF",
+      "symbol": "MSFT",
+      "holdings_price": "532.95",
+      "history_close": "532.9500122070312",
+      "difference_usd": "0.0000122070312"
+    },
+    {
+      "fund": "IVV",
+      "symbol": "AMZN",
+      "holdings_price": "262.37",
+      "history_close": "262.3699951171875",
+      "difference_usd": "-0.0000048828125"
+    },
+    {
+      "fund": "OEF",
+      "symbol": "AMZN",
+      "holdings_price": "262.37",
+      "history_close": "262.3699951171875",
+      "difference_usd": "-0.0000048828125"
+    },
+    {
+      "fund": "IVV",
+      "symbol": "GOOGL",
+      "holdings_price": "334.76",
+      "history_close": "334.760009765625",
+      "difference_usd": "0.000009765625"
+    },
+    {
+      "fund": "OEF",
+      "symbol": "GOOGL",
+      "holdings_price": "334.76",
+      "history_close": "334.760009765625",
+      "difference_usd": "0.000009765625"
+    },
+    {
+      "fund": "IVV",
+      "symbol": "AVGO",
+      "holdings_price": "337.80",
+      "history_close": "337.79998779296875",
+      "difference_usd": "-0.00001220703125"
+    },
+    {
+      "fund": "OEF",
+      "symbol": "AVGO",
+      "holdings_price": "337.80",
+      "history_close": "337.79998779296875",
+      "difference_usd": "-0.00001220703125"
+    },
+    {
+      "fund": "IVV",
+      "symbol": "GOOG",
+      "holdings_price": "330.95",
+      "history_close": "330.95001220703125",
+      "difference_usd": "0.00001220703125"
+    },
+    {
+      "fund": "OEF",
+      "symbol": "GOOG",
+      "holdings_price": "330.95",
+      "history_close": "330.95001220703125",
+      "difference_usd": "0.00001220703125"
+    },
+    {
+      "fund": "IVV",
+      "symbol": "META",
+      "holdings_price": "697.52",
+      "history_close": "697.52001953125",
+      "difference_usd": "0.00001953125"
+    },
+    {
+      "fund": "OEF",
+      "symbol": "META",
+      "holdings_price": "697.52",
+      "history_close": "697.52001953125",
+      "difference_usd": "0.00001953125"
+    },
+    {
+      "fund": "IVV",
+      "symbol": "TSLA",
+      "holdings_price": "386.47",
+      "history_close": "386.4700012207031",
+      "difference_usd": "0.0000012207031"
+    },
+    {
+      "fund": "OEF",
+      "symbol": "TSLA",
+      "holdings_price": "386.47",
+      "history_close": "386.4700012207031",
+      "difference_usd": "0.0000012207031"
+    },
+    {
+      "fund": "IVV",
+      "symbol": "MU",
+      "holdings_price": "913.67",
+      "history_close": "913.6699829101562",
+      "difference_usd": "-0.0000170898438"
+    },
+    {
+      "fund": "OEF",
+      "symbol": "MU",
+      "holdings_price": "913.67",
+      "history_close": "913.6699829101562",
+      "difference_usd": "-0.0000170898438"
+    }
+  ],
+  "point_in_time_backtest_supported": false,
+  "executed_at_utc": "2026-10-22T20:21:00.610825+00:00",
+  "verification_code_sha256": "5be166a22e83fa124a1df2a33528006e6e760204cd8752c28bf1cf87704ea01e"
+}

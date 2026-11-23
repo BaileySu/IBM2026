@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>QuantBridge | Risk &amp; research</title>
+  <link href="/app.css" rel="stylesheet"><script src="/app.js" defer></script>
+</head>
+<body>
+<header><div class="bar"><a href="/" class="brand"><i aria-hidden="true">Q</i>QuantBridge</a>
+  <nav aria-label="Views"><a id="risk-link" href="#risk">Portfolio risk</a><a id="research-link" href="#research">Security research</a><a href="/assistant">Ask QuantBridge</a></nav>
+</div></header>
+<main>
+  <p id="notice" role="status">Loading market snapshot…</p>
+  <section id="risk" hidden>
+    <div class="intro"><div><p class="kicker snapshot"></p><h1>Portfolio risk</h1>
+      <p>Compare concentration and price-history coverage across two equity funds.</p></div>
+      <label>Volatility window<select id="risk-window"><option value="20">20 sessions</option><option value="60">60 sessions</option></select></label></div>
+    <div id="fund-cards" class="cards"></div>
+    <div class="section-head"><h2>Holdings detail</h2><label>Fund<select id="fund"></select></label></div>
+    <div class="split"><article><h3>Largest holdings</h3><p class="caption">Share of USD equity market value</p><div id="top"></div></article>
+      <article><h3>Sector exposure</h3><p class="caption">Share of USD equity market value</p><div id="sectors"></div></article></div>
+    <div class="section-head"><div><h2>Security volatility</h2><p class="caption">Annualized from daily adjusted closes. Search any holding to check its coverage.</p></div>
+      <label>Find a holding<input id="search" type="search" placeholder="e.g. JPM" autocomplete="off"></label></div>
+    <div id="holdings" class="scroll"></div>
+    <div class="foot"><span id="count"></span><button type="button" id="more">Show more holdings</button><a id="risk-json">Open fund data (JSON)</a></div>
+  </section>
+  <section id="research" hidden>
+    <div class="intro"><div><p class="kicker snapshot"></p><h1>Security research</h1>
+      <p>Compare return and volatility using the same price series and rules as the risk view.</p></div></div>
+    <form id="research-form"><label>Stock symbols<input name="symbols" value="NVDA, JPM" required></label>
+      <label>Window<select name="windows"><option value="20,60">20 and 60 sessions</option><option value="20">20 sessions</option><option value="60">60 sessions</option></select></label>
+      <button class="primary">Run comparison</button></form>
+    <div class="section-head"><h2>Research table</h2><button id="csv" type="button" disabled>Download CSV</button></div>
+    <div id="research-results" class="scroll"></div>
+    <p class="foot"><a id="research-json">Open research data (JSON)</a></p>
+  </section>
+  <details id="definitions" hidden><summary>Data sources and calculation rules</summary>
+    <p>Holdings use iShares reported market values for USD equities. Weights exclude cash and other assets. The historical price sample covers ten common stocks. SPY supplies the observed trading calendar.</p>
+    <p>Yahoo split- and dividend-adjusted closes supply simple daily returns. Annualized security volatility is the sample standard deviation of those returns multiplied by √252. A missing required price blocks the affected result. The dataset is a retrospective snapshot.</p>
+    <p id="versions"></p></details>
+</main>
+</body></html>

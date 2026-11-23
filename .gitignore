@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.packages/
+.venv/
+data/results/
+*.tmp
+.env
+data/*.sqlite
+data/*.manifest.json
+data/real/*/raw/
+data/real/new/
+evaluation/results/missing_price_checks_*.json

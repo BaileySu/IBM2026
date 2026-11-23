@@ -1,0 +1,9 @@
+QuantBridge is a Python 3.14 application built on the standard library. It loads public fund holdings and daily prices into a read-only SQLite snapshot and checks the snapshot hash before every calculation. A local HTTP service supplies a portfolio risk page and a separate research export, and both use one metric contract. The natural-language assistant uses DeepSeek function calling. The model can ask a clarifying question, look up approved definitions and price coverage, or select a calculation. It never produces a number itself. Every figure comes from the local calculation.
+
+QuantBridge calculates stock returns and volatility for both tools. IBM Bob helped review a failure that matters to both. If a closing price is missing, skipping that day would change the measurement window and could give a researcher a misleading result.
+
+The calculation already checked each required trading session and blocked an incomplete window. Bob identified a problem with the explanation shown to the user. A missing price record, an empty price field and a stored price of zero all produced the same message. The revised query checks both the stock identifier and the adjusted closing price. It can now tell a data analyst which record to add or which field to correct.
+
+The change was tested on copies of the same SQLite snapshot by altering one NVDA observation at a time. In all three cases, the 20-session window had 20 usable prices out of the 21 required. The 60-session window had 60 out of 61. Both calculations left return and volatility blank and identified the affected date and cause. A regression test now covers all three cases.
+
+Bob also raised a concern about combining holdings from different dates. A second review against the database schema established that each fund has one holdings snapshot and that the service checks the requested date. That evidence resolved the concern and kept the code change focused on the price diagnostics.

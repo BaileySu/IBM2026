@@ -1,0 +1,14 @@
+{
+  "contract_version": "2.0.0",
+  "dataset_version": "qb-real-v1",
+  "synthetic": false,
+  "status": "prototype_rules_not_customer_approved",
+  "sources": {"holdings": "iShares official IVV and OEF CSV snapshots", "history": "Yahoo Finance daily chart responses", "point_in_time_backtest_supported": false},
+  "scope": {"funds": ["IVV", "OEF"], "holdings": "complete_original_snapshots", "valuation_scope": "USD_equity_rows_only", "history_universe": "ten_largest_common_USD_equities_ranked_by_IVV_reported_market_value", "sessions": 130, "windows": [20, 60]},
+  "time": {"business_date": "source_holdings_as_of", "cutoff": "retrospective_snapshot_analysis_not_historical_information_cutoff", "available_at": null, "retrieved_at": "actual_source_capture_timestamp", "sessions": "SPY_observed_trading_dates_ending_on_holdings_date", "publication_history": "not_available_do_not_fabricate"},
+  "valuation": {"authority": "iShares_reported_market_value", "reconciliation": "quantity_times_iShares_snapshot_price", "denominator": "sum_of_USD_equity_market_values_excludes_cash_futures_and_money_market", "top5": "aggregate_by_security_then_sum_five_largest_values", "sector": "source_sector_classification_at_snapshot_date", "holdings_price": "issuer_snapshot_vendor_price_not_assumed_NAV_price"},
+  "returns": {"price_field": "close_split_dividend_adjusted", "definition": "P_t/P_previous-1", "window_return": "P_t/P_t_minus_W-1", "volatility": "sample_standard_deviation_of_W_simple_returns_times_sqrt_252", "ddof": 1, "annualization": 252, "prices_required": "W_plus_1_exact_consecutive_reference_sessions", "label": "vendor_split_and_dividend_adjusted_price_return", "scope": "individual_security_not_portfolio"},
+  "precision": {"reported_amount_storage": "integer_USD_cents", "quantity_price_storage": "decimal_text_preserving_source_precision", "calculation": "Decimal_precision_40", "display_rounding": "ROUND_HALF_UP_to_2_USD_decimals_after_aggregation", "variance_comparison_absolute_tolerance": "1e-12", "reconciliation_exact_tolerance_USD": "0.01", "rounding_discrepancy": "retain_and_report_separately_never_overwrite_source_market_value"},
+  "failure_policy": {"missing_history": "BLOCKED_no_fill_no_skip", "no_history_for_unselected_security": "NOT_COVERED_not_zero", "ambiguous_symbol": "NEEDS_CONFIRMATION", "non_USD_or_non_equity": "preserved_and_explicitly_excluded_from_equity_metrics", "mismatched_holdings_dates": "BLOCKED", "incomplete_or_changed_source": "BLOCKED", "historical_as_known_request": "UNSUPPORTED_without_publication_and_revision_history"},
+  "rights": {"local_use": "educational_prototype", "commercial_redistribution": "not_verified_no_claim_of_license"}
+}

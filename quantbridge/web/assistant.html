@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Ask QuantBridge</title>
+  <link rel="stylesheet" href="/app.css"><script defer src="/assistant.js"></script>
+</head>
+<body>
+<header><div class="bar"><a href="/" class="brand"><i aria-hidden="true">Q</i>QuantBridge</a>
+  <nav aria-label="Views"><a href="/#risk">Portfolio risk</a><a href="/#research">Security research</a><a href="/assistant" aria-current="page">Ask QuantBridge</a></nav>
+</div></header>
+<main class="ask">
+  <div class="intro"><div><p class="kicker" id="snapshot"></p><h1>Ask QuantBridge</h1>
+    <p>Ask about fund holdings, stock returns, or volatility.</p></div></div>
+  <form id="ask-form">
+    <label for="question">Your question<input id="question" required maxlength="1200" placeholder="Compare NVDA and JPM over 20 sessions." autocomplete="off"></label>
+    <button class="primary" id="ask" disabled>Ask</button>
+    <button type="button" id="reset" hidden>New conversation</button>
+  </form>
+  <p class="caption" id="model"></p>
+  <p id="notice" role="status">Loading…</p>
+  <div id="answers" aria-live="polite"></div>
+</main></body></html>
